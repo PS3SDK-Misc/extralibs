@@ -9,4 +9,4 @@ wget --no-check-certificate https://github.com/bucanero/libtre-ps3/tarball/maste
 rm -Rf libtre-ps3 && mkdir libtre-ps3 && tar --strip-components=1 --directory=libtre-ps3 -xvzf libtre-ps3.tar.gz && cd libtre-ps3
 
 ## Compile and install.
-${MAKE:-make} install
+${MAKE:-make} --file=ps3/Makefile install
